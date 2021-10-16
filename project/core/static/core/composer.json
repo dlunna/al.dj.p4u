@@ -1,0 +1,16 @@
+{
+    "name": "d4v/core",
+    "description": "My library",
+    "type": "project",
+    "authors": [
+        {
+            "name": "dlunna",
+            "email": "dlunna@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "^5.0",
+        "components/jquery": "^3.5"
+    }
+
+}

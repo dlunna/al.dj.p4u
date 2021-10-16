@@ -1,0 +1,13 @@
+server {
+        listen 80;
+
+        server_name alamandra.tk www.alamandra.tk;
+
+        location /static/ {
+                root /var/www/pyfy/2021/al.dj21.home/project/;
+        }
+
+        location / {
+                proxy_pass http://localhost:8888;
+        }
+}

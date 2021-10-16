@@ -1,0 +1,2 @@
+#gunicorn -c unicorn/config.py project.wsgi
+gunicorn -c guniconf/config.py project.wsgi
