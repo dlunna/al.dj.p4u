@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-16 01:19-0500\n"
+"POT-Creation-Date: 2021-10-17 11:36-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#: core/templates/core/base.html:34
+#: core/templates/core/base.html:35 core/templates/core/base.html:78
 msgid "Home"
-msgstr "Inicio"
+msgstr ""
 
-#: core/templates/core/base.html:75
-msgid "hellow"
-msgstr "holaaa"
+#: core/templates/core/base.html:36
+msgid "About"
+msgstr "Acerca de"
+
+#: core/templates/core/base.html:37
+msgid "Learning"
+msgstr "Aprendiendo"
+
+#: core/templates/core/base.html:38
+msgid "Teaching"
+msgstr "Enseñando"
+
+#: core/templates/core/base.html:39
+msgid "Practice"
+msgstr "Practica"
+
+#: core/templates/core/base.html:40
+msgid "Training"
+msgstr "Entrenamiento"
+
+#: core/templates/core/base.html:165 core/templates/core/simple.html:34
+msgid "my love"
+msgstr "mi super amor"
+
+#: core/templates/core/home.html:46
+msgid "Hellow"
+msgstr "Holaaaaa"

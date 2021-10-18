@@ -23,15 +23,22 @@ from django.conf.urls.i18n import i18n_patterns
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
     path('admin/', admin.site.urls),
+
     path('', views.home, name='home'),
+    path('', views.home, name='home'),
+    path('message', views.message, name='message'),
     path('contact/', views.contact, name='contact'),
+    path('simple/', views.simple, name='simple'),
+
     #prefix_default_language=False,
 ]
 
 urlpatterns += i18n_patterns (
-#    path('', views.home, name='home'),
-#    path('contact/', views.contact, name='contact'),
-    prefix_default_language=False,
+
+    #path('', views.home, name='home'),
+    #path('contact/', views.contact, name='contact'),
+
+    #prefix_default_language=False,
 )
 
 

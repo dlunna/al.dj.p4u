@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block titulo %} h0me {% endblock %}
+
+{% block contenido %}
+  {% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == 'es-mx' %}
+    <img alt="G4U" class="img-fluid" src="{% static 'core/images/message/gobernador-es.png' %}" >
+  {% elif LANGUAGE_CODE == 'en-us' %}
+    <img alt="G4U" class="img-fluid" src="{% static 'core/images/message/gobernador-en.png' %}" >
+  {% endif %}
+{% endblock %}

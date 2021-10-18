@@ -5,6 +5,13 @@ from django.shortcuts import render, HttpResponse
 def home(request):
     return render(request, 'core/home.html')
 
+def message(request):
+    return render(request, 'core/message.html')
+
+def simple(request):
+    return render(request, 'core/simple.html')
+
+
 def contact(request):
     return render(request, 'core/contact.html')
 

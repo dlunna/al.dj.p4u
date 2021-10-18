@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="GrowingForU">
+  <meta name="description" content="GrowingForYou">
   <meta name="author" content="UPP">
   <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
@@ -23,33 +23,80 @@
 <body>
 
 
-  <header class="p-3 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="{% url 'home'%}" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="{% url 'home'%}" class="nav-link px-2 text-secondary">{% trans 'Home' %}</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="{% url 'contact'%}" class="nav-link px-2 text-white">Contact</a></li>
+
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Navbar Menu">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">English Learning Ecosystem (ELE)</a>
+
+
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+
+          <li class="nav-item">
+            <a class="nav-link px-2 text-secondary" aria-current="page" href="{% url 'home'%}">{% trans 'Home' %}</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="{% url 'message' %}">Governor´s message</a></li>
+              <li><a class="dropdown-item" href="#">What is ELE?</a></li>
+              <li><a class="dropdown-item" href="#">Components</a></li>
+              <li><a class="dropdown-item" href="#">Methodology</a></li>
+              <li><a class="dropdown-item" href="#">Partners</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Learning</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+              <li><a class="dropdown-item" href="#">Level A1</a></li>
+              <li><a class="dropdown-item" href="#">Level A2</a></li>
+              <li><a class="dropdown-item" href="#">Level B1</a></li>
+              <li><a class="dropdown-item" href="#">Level B1+</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Teaching</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+              <li><a class="dropdown-item" href="#">Resources & Assessment</a></li>
+              <li><a class="dropdown-item" href="#">Digital Tools</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Practice</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+              <li><a class="dropdown-item" href="#">Level A1</a></li>
+              <li><a class="dropdown-item" href="#">Level A2</a></li>
+              <li><a class="dropdown-item" href="#">Level B1</a></li>
+              <li><a class="dropdown-item" href="#">Level B1+</a></li>
+            </ul>
+          </li>
+
         </ul>
 
-        <div class="text-end">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
-        </div>
       </div>
+
+      <div class="text-end">
+          <button type="button" class="btn btn-warning">Login</button>
+      </div>
+
+
     </div>
-  </header>
+  </nav>
+
+
+
+
 
   <div class="b-example-divider"></div>
 
-  <a href="es/{% url 'home'%}">es</a>
-  <a href="en/{% url 'home'%}">en</a>
+
+<div class="text-end">
 
   <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
     <input name="next" type="hidden" value="{{ redirect_to }}">
@@ -64,15 +111,16 @@
         {% endfor %}
     </select>
     <input type="submit" value="Go">
-</form>
+  </form>
 
+</div>
 
+{# get_current_language as LANGUAGE_CODE #}
+{#LANGUAGE_CODE#}
+{# trans 'my love' #}
 
-  <h4>Alamandra</h4>
   <hr>
-  <br>
 
-  {% trans "hellow" %}
 
   {% block contenido %}{% endblock %}
 
