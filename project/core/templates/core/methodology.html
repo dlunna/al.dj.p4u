@@ -1,0 +1,46 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block titulo %} {% trans 'Methodology' %} {% endblock %}
+
+{% block contenido %}
+
+  <h1>{% trans 'Methodology' %}</h1>
+  <hr>
+  <p>{% trans 'parrafo0' %}</p>
+
+  {% get_current_language as LANGUAGE_CODE %}
+
+  <div class="row mb-3">
+    <div class="col-md-3 themed-grid-col"></div>
+    <div class="col-md-6 themed-grid-col">
+
+      {% if LANGUAGE_CODE == 'es-mx' %}
+        <img alt="G4U" class="img-fluid" src="{% static 'core/images/methodology/marco_comun_es.jpg' %}" >
+      {% elif LANGUAGE_CODE == 'en-us' %}
+        <img alt="G4U" class="img-fluid" src="{% static 'core/images/methodology/marco_comun_en.jpg' %}" >
+      {% endif %}
+
+    </div>
+    <div class="col-md-3 themed-grid-col"></div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6 themed-grid-col">
+      <p>{% trans 'methodology-parrafo1' %}</p>
+      <p>{% trans 'The Student´s book is a learning tool administered by the teacher and the Workbook
+        that is a learning tool that the student can work on his / her own. '%}</p>
+      <p>{% trans 'There is a Students Book and a Workbook for each one of the proficiency levels according
+        to the CEFRL divided in 10 learning units divided in 5 lessons each one, integrating the five
+        skills of the language: Reading, Writing, Listening, and Speaking.'%}</p>
+    </div>
+    <div class="col-md-6 themed-grid-col">
+      <img alt="G4U" class="img-fluid" src="{% static 'core/images/methodology/libros.jpg' %}" >
+    </div>
+
+  </div>
+
+
+{% endblock %}
+

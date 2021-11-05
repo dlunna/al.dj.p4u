@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-17 11:36-0500\n"
+"POT-Creation-Date: 2021-11-04 22:34-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,34 +17,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-#: core/templates/core/base.html:35 core/templates/core/base.html:78
+
+#: core/templates/core/base.html:38 core/templates/core/home.html:5
 msgid "Home"
 msgstr ""
 
-#: core/templates/core/base.html:36
+#: core/templates/core/base.html:42
 msgid "About"
 msgstr "Acerca de"
 
-#: core/templates/core/base.html:37
+#: core/templates/core/base.html:44
+msgid "Governor´s message"
+msgstr "Mensaje del Gobernador"
+
+#: core/templates/core/base.html:45
+msgid "What is ELE?"
+msgstr "¿Que es ELE?"
+
+#: core/templates/core/base.html:46 core/templates/core/components.html:5
+msgid "Components"
+msgstr "Componentes"
+
+#: core/templates/core/base.html:47 core/templates/core/methodology.html:5
+#: core/templates/core/methodology.html:9
+msgid "Methodology"
+msgstr "Metodología"
+
+#: core/templates/core/base.html:48
+msgid "Partners"
+msgstr "Socios"
+
+#: core/templates/core/base.html:53
 msgid "Learning"
 msgstr "Aprendiendo"
 
-#: core/templates/core/base.html:38
+#: core/templates/core/base.html:55 core/templates/core/base.html:73
+msgid "Level A1"
+msgstr "Nivel A1"
+
+#: core/templates/core/base.html:56 core/templates/core/base.html:74
+msgid "Level A2"
+msgstr "Nivel A2"
+
+#: core/templates/core/base.html:57 core/templates/core/base.html:75
+msgid "Level B1"
+msgstr "Nivel B1"
+
+#: core/templates/core/base.html:58 core/templates/core/base.html:76
+msgid "Level B1+"
+msgstr "Nivel B1+"
+
+#: core/templates/core/base.html:63
 msgid "Teaching"
 msgstr "Enseñando"
 
-#: core/templates/core/base.html:39
+#: core/templates/core/base.html:65
+msgid "Resources & Assessment"
+msgstr "Recursos y Evaluación"
+
+#: core/templates/core/base.html:66
+msgid "Digital Tools"
+msgstr "Herramientas digitales"
+
+#: core/templates/core/base.html:71
 msgid "Practice"
 msgstr "Practica"
 
-#: core/templates/core/base.html:40
-msgid "Training"
-msgstr "Entrenamiento"
+#: core/templates/core/components.html:9
+msgid "Strategy components ELE"
+msgstr ""
 
-#: core/templates/core/base.html:165 core/templates/core/simple.html:34
+#: core/templates/core/components.html:11
+msgid "The G4U strategy includes the following components:"
+msgstr ""
+
+#: core/templates/core/message.html:5
+#, fuzzy
+#| msgid "Governor´s message"
+msgid "Governor’s message"
+msgstr "Mensaje del Gobernador"
+
+#: core/templates/core/methodology.html:11
+msgid "parrafo0"
+msgstr "Todo el material desarrollado se encuentra alineado al Marco Común Europeo de Referencia de Lengua (MCERL) dado que es el marco utilizado por todas las Instituciones de Educación Superior para la enseñanza del idioma inglés, mismo que considera 5 niveles de dominio."
+
+#: core/templates/core/methodology.html:31
+#, fuzzy
+#| msgid "Methodology"
+msgid "methodology-parrafo1"
+msgstr ""
+"Cada nivel de dominio considera dos materiales principales: Student's Book y "
+"Workbook."
+
+#: core/templates/core/simple.html:37
 msgid "my love"
 msgstr "mi super amor"
-
-#: core/templates/core/home.html:46
-msgid "Hellow"
-msgstr "Holaaaaa"

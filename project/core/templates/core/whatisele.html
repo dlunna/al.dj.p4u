@@ -1,0 +1,14 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block titulo %} What is ELE {% endblock %}
+
+{% block contenido %}
+  {% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == 'es-mx' %}
+    <img alt="G4U" class="img-fluid" src="{% static 'core/images/what_is_ele/antecedentes_es.jpg' %}" >
+  {% elif LANGUAGE_CODE == 'en-us' %}
+    <img alt="G4U" class="img-fluid" src="{% static 'core/images/what_is_ele/antecedentes_en.jpg' %}" >
+  {% endif %}
+{% endblock %}

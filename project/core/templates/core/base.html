@@ -39,41 +39,41 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'About' %}</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown01">
-              <li><a class="dropdown-item" href="{% url 'message' %}">Governor´s message</a></li>
-              <li><a class="dropdown-item" href="#">What is ELE?</a></li>
-              <li><a class="dropdown-item" href="#">Components</a></li>
-              <li><a class="dropdown-item" href="#">Methodology</a></li>
-              <li><a class="dropdown-item" href="#">Partners</a></li>
+              <li><a class="dropdown-item" href="{% url 'message' %}">{% trans 'Governor´s message' %}</a></li>
+              <li><a class="dropdown-item" href="{% url 'whatisele' %}">{% trans 'What is ELE?' %}</a></li>
+              <li><a class="dropdown-item" href="{% url 'components' %}">{% trans 'Components' %}</a></li>
+              <li><a class="dropdown-item" href="{% url 'methodology' %}">{% trans 'Methodology' %}</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Partners' %}</a></li>
             </ul>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Learning</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Learning' %}</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown02">
-              <li><a class="dropdown-item" href="#">Level A1</a></li>
-              <li><a class="dropdown-item" href="#">Level A2</a></li>
-              <li><a class="dropdown-item" href="#">Level B1</a></li>
-              <li><a class="dropdown-item" href="#">Level B1+</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Level A1' %}</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Level A2' %}</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Level B1' %}</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Level B1+' %}</a></li>
             </ul>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Teaching</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Teaching' %}</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown03">
-              <li><a class="dropdown-item" href="#">Resources & Assessment</a></li>
-              <li><a class="dropdown-item" href="#">Digital Tools</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Resources & Assessment' %}</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Digital Tools' %}</a></li>
             </ul>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Practice</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Practice' %}</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown04">
-              <li><a class="dropdown-item" href="#">Level A1</a></li>
-              <li><a class="dropdown-item" href="#">Level A2</a></li>
-              <li><a class="dropdown-item" href="#">Level B1</a></li>
-              <li><a class="dropdown-item" href="#">Level B1+</a></li>
+              <li><a class="dropdown-item" href="{% url 'practice_LevelA1' %}">{% trans 'Level A1' %}</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Level A2' %}</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Level B1' %}</a></li>
+              <li><a class="dropdown-item" href="#">{% trans 'Level B1+' %}</a></li>
             </ul>
           </li>
 

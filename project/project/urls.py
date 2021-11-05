@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core import views
+from core import views as core_views
+from practice import views as practice_views
 from django.urls import include
 from django.conf.urls.i18n import i18n_patterns
 #from django.utils.translation import gettext_lazy as _
@@ -24,11 +25,16 @@ urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
     path('admin/', admin.site.urls),
 
-    path('', views.home, name='home'),
-    path('', views.home, name='home'),
-    path('message', views.message, name='message'),
-    path('contact/', views.contact, name='contact'),
-    path('simple/', views.simple, name='simple'),
+    path('', core_views.home, name='home'),
+    path('message', core_views.message, name='message'),
+    path('whatisele', core_views.whatisele, name='whatisele'),
+    path('components', core_views.components, name='components'),
+    path('methodology', core_views.methodology, name='methodology'),
+    path('contact/', core_views.contact, name='contact'),
+    path('simple/', core_views.simple, name='simple'),
+
+    #Practice
+    path('practice_LevelA1', practice_views.LevelA1, name='practice_LevelA1'),
 
     #prefix_default_language=False,
 ]

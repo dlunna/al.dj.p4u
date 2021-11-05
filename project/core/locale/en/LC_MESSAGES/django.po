@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-04 22:34-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: core/templates/core/base.html:38 core/templates/core/home.html:5
+msgid "Home"
+msgstr ""
+
+#: core/templates/core/base.html:42
+msgid "About"
+msgstr ""
+
+#: core/templates/core/base.html:44
+msgid "Governor´s message"
+msgstr ""
+
+#: core/templates/core/base.html:45
+msgid "What is ELE?"
+msgstr ""
+
+#: core/templates/core/base.html:46 core/templates/core/components.html:5
+msgid "Components"
+msgstr ""
+
+#: core/templates/core/base.html:47 core/templates/core/methodology.html:5
+#: core/templates/core/methodology.html:9
+msgid "Methodology"
+msgstr ""
+
+#: core/templates/core/base.html:48
+msgid "Partners"
+msgstr ""
+
+#: core/templates/core/base.html:53
+msgid "Learning"
+msgstr ""
+
+#: core/templates/core/base.html:55 core/templates/core/base.html:73
+msgid "Level A1"
+msgstr ""
+
+#: core/templates/core/base.html:56 core/templates/core/base.html:74
+msgid "Level A2"
+msgstr ""
+
+#: core/templates/core/base.html:57 core/templates/core/base.html:75
+msgid "Level B1"
+msgstr ""
+
+#: core/templates/core/base.html:58 core/templates/core/base.html:76
+msgid "Level B1+"
+msgstr ""
+
+#: core/templates/core/base.html:63
+msgid "Teaching"
+msgstr ""
+
+#: core/templates/core/base.html:65
+msgid "Resources & Assessment"
+msgstr ""
+
+#: core/templates/core/base.html:66
+msgid "Digital Tools"
+msgstr ""
+
+#: core/templates/core/base.html:71
+msgid "Practice"
+msgstr ""
+
+#: core/templates/core/components.html:9
+msgid "Strategy components ELE"
+msgstr ""
+
+#: core/templates/core/components.html:11
+msgid "The G4U strategy includes the following components:"
+msgstr ""
+
+#: core/templates/core/message.html:5
+msgid "Governor’s message"
+msgstr ""
+
+#: core/templates/core/methodology.html:11
+msgid "parrafo0"
+msgstr "All the materials developed are aligned to the Common European Framework of Reference for Languages (CEFRL) because this framework is used as a basis in all the Higher Education Institutions for the teaching of the English language considering 6 levels of proficiency."
+
+#: core/templates/core/methodology.html:31
+msgid "methodology-parrafo1"
+msgstr "Each level considers two main components: Student’s Book and Workbook."
+
+#: core/templates/core/simple.html:37
+msgid "my love"
+msgstr ""

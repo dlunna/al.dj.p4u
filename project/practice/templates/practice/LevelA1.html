@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block titulo %} {% trans 'Level A1' %}} {% endblock %}
+
+{% block contenido %}
+  {% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == 'es-mx' %}
+    <p>.</p>
+  {% elif LANGUAGE_CODE == 'en-us' %}
+    <p>.</p>
+  {% endif %}
+
+  <h2>{% trans 'Dear Student:' %}</h2>
+
+  <p>{% blocktranslate %}In this section, you will find a combination of resources such as quizzes, interactive exercises, and videos for you to practice and improve your proficiency in the English language. {% endblocktranslate %}</p>
+  <p>{% blocktranslate %}The resources shown here, are organized according to your English language level and feel free to use them as many times as you need so you can improve your English communication skills.
+{% endblocktranslate %}</p>
+
+  <iframe src="http://localhost:8000/static/core/Libros/A1/Quizzes/Unit01/UNIT1_LESSON_A/quiz_html5.html" width="100%" height="500">
+
+  </iframe>
+
+  <p>fin de la alamandra</p>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block titulo %} {% trans 'Components' %} {% endblock %}
+
+{% block contenido %}
+
+  <h1>{% trans 'Strategy components ELE' %}</h1>
+  <hr>
+  <p>{% trans 'The G4U strategy includes the following components:' %}</p>
+
+  {% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == 'es-mx' %}
+    <img alt="G4U" class="img-fluid" src="{% static 'core/images/components/componentes_es.jpg' %}" >
+  {% elif LANGUAGE_CODE == 'en-us' %}
+    <img alt="G4U" class="img-fluid" src="{% static 'core/images/components/componentes_en.jpg' %}" >
+  {% endif %}
+{% endblock %}
