@@ -5,6 +5,10 @@
 {% block titulo %} What is ELE {% endblock %}
 
 {% block contenido %}
+
+  <h1>{% trans 'What is English Learning Ecosystem?' %}</h1>
+  <hr>
+
   {% get_current_language as LANGUAGE_CODE %}
   {% if LANGUAGE_CODE == 'es-mx' %}
     <img alt="G4U" class="img-fluid" src="{% static 'core/images/what_is_ele/antecedentes_es.jpg' %}" >

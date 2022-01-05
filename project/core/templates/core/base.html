@@ -16,6 +16,24 @@
   <!-- Bootstrap core CSS -->
   <link href="{% static 'core/vendor/twbs/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
 
+  <style>
+    .fondo1 {
+      width: 100%;
+      height: 100%%;
+      background-image: url('{% static 'core/images/LoginFondo.png' %}');
+      background-size: cover;
+      /*border: 1px solid purple;*/
+    }
+    .fondo2 {
+      width: 100%;
+      height: 100%%;
+      background-image: url('{% static 'core/images/LoginFondoWhite.png' %}');
+      background-size: cover;
+      /*border: 1px solid purple;*/
+    }    
+  </style>
+
+
 
 
 </head>
@@ -39,7 +57,8 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'About' %}</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+              aria-expanded="false">{% trans 'About' %}</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown01">
               <li><a class="dropdown-item" href="{% url 'message' %}">{% trans 'Governor´s message' %}</a></li>
               <li><a class="dropdown-item" href="{% url 'whatisele' %}">{% trans 'What is ELE?' %}</a></li>
@@ -50,7 +69,8 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Learning' %}</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown"
+              aria-expanded="false">{% trans 'Learning' %}</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown02">
               <li><a class="dropdown-item" href="#">{% trans 'Level A1' %}</a></li>
               <li><a class="dropdown-item" href="#">{% trans 'Level A2' %}</a></li>
@@ -60,7 +80,8 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Teaching' %}</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown"
+              aria-expanded="false">{% trans 'Teaching' %}</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown03">
               <li><a class="dropdown-item" href="#">{% trans 'Resources & Assessment' %}</a></li>
               <li><a class="dropdown-item" href="#">{% trans 'Digital Tools' %}</a></li>
@@ -68,7 +89,8 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">{% trans 'Practice' %}</a>
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
+              aria-expanded="false">{% trans 'Practice' %}</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown04">
               <li><a class="dropdown-item" href="{% url 'practice_LevelA1' %}">{% trans 'Level A1' %}</a></li>
               <li><a class="dropdown-item" href="#">{% trans 'Level A2' %}</a></li>
@@ -82,7 +104,7 @@
       </div>
 
       <div class="text-end">
-          <button type="button" class="btn btn-warning">Login</button>
+        <button type="button" class="btn btn-warning">Login</button>
       </div>
 
 
@@ -95,34 +117,37 @@
 
   <div class="b-example-divider"></div>
 
+  <div class="fondo2">
 
-<div class="text-end">
+    <br>
 
-  <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-    <input name="next" type="hidden" value="{{ redirect_to }}">
-    <select name="language">
-        {% get_current_language as LANGUAGE_CODE %}
-        {% get_available_languages as LANGUAGES %}
-        {% get_language_info_list for LANGUAGES as languages %}
-        {% for language in languages %}
-            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                {{ language.name_local }} ({{ language.code }})
-            </option>
-        {% endfor %}
-    </select>
-    <input type="submit" value="Go">
-  </form>
+    <div class="text-end">
 
-</div>
+      <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}">
+        <select name="language">
+          {% get_current_language as LANGUAGE_CODE %}
+          {% get_available_languages as LANGUAGES %}
+          {% get_language_info_list for LANGUAGES as languages %}
+          {% for language in languages %}
+          <option value="{{ language.code }}" {% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+            {{ language.name_local }} ({{ language.code }})
+          </option>
+          {% endfor %}
+        </select>
+        <input type="submit" value="Go">
+      </form>
 
-{# get_current_language as LANGUAGE_CODE #}
-{#LANGUAGE_CODE#}
-{# trans 'my love' #}
+    </div>
 
-  <hr>
+    {# get_current_language as LANGUAGE_CODE #}
+    {#LANGUAGE_CODE#}
+    {# trans 'my love' #}
 
-
-  {% block contenido %}{% endblock %}
+    <div class="container">
+      {% block contenido %}{% endblock %}
+    </div>
+  </div>
 
   <!-- Bootstrap core JavaScript
     ================================================== -->

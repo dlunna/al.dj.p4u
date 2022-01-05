@@ -5,6 +5,10 @@
 {% block titulo %} {% trans 'Governor’s message' %} {% endblock %}
 
 {% block contenido %}
+
+  <h1>{% trans 'Governor’s message' %}</h1>
+  <hr>
+  
   {% get_current_language as LANGUAGE_CODE %}
   {% if LANGUAGE_CODE == 'es-mx' %}
     <img alt="G4U" class="img-fluid" src="{% static 'core/images/message/gobernador-es.png' %}" >
