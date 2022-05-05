@@ -20,6 +20,10 @@ def components(request):
 def methodology(request):
     return render(request, 'core/methodology.html')
 
+def partners(request):
+    return render(request, 'core/partners.html')
+
+
 def contact(request):
     return render(request, 'core/contact.html')
 

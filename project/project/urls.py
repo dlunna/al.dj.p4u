@@ -26,10 +26,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', core_views.home, name='home'),
+    
     path('message', core_views.message, name='message'),
     path('whatisele', core_views.whatisele, name='whatisele'),
     path('components', core_views.components, name='components'),
     path('methodology', core_views.methodology, name='methodology'),
+    path('partners', core_views.partners, name='partners'),
+
     path('contact/', core_views.contact, name='contact'),
     path('simple/', core_views.simple, name='simple'),
 

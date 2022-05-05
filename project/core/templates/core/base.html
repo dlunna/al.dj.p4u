@@ -16,6 +16,11 @@
   <!-- Bootstrap core CSS -->
   <link href="{% static 'core/vendor/twbs/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">
 
+  <!-- FA core CSS -->
+  <link href="{% static 'core/vendor/components/font-awesome/css/fontawesome.css' %}" rel="stylesheet">
+  <link href="{% static 'core/vendor/components/font-awesome/css/brands.css' %}" rel="stylesheet">
+  <link href="{% static 'core/vendor/components/font-awesome/css/solid.css' %}" rel="stylesheet">
+
   <style>
     .fondo1 {
       width: 100%;
@@ -41,9 +46,6 @@
 <body>
 
 
-
-
-
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Navbar Menu">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">English Learning Ecosystem (ELE)</a>
@@ -64,7 +66,7 @@
               <li><a class="dropdown-item" href="{% url 'whatisele' %}">{% trans 'What is ELE?' %}</a></li>
               <li><a class="dropdown-item" href="{% url 'components' %}">{% trans 'Components' %}</a></li>
               <li><a class="dropdown-item" href="{% url 'methodology' %}">{% trans 'Methodology' %}</a></li>
-              <li><a class="dropdown-item" href="#">{% trans 'Partners' %}</a></li>
+              <li><a class="dropdown-item" href="{% url 'partners' %}">{% trans 'Partners' %}</a></li>
             </ul>
           </li>
 
@@ -148,6 +150,63 @@
       {% block contenido %}{% endblock %}
     </div>
   </div>
+
+
+
+
+
+
+  <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="mb-3">{% trans 'Soporte técnico' %}</h5>
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a type="button" class="btn btn-floating btn-warning btn-md" href="https://www.facebook.com/profile.php?id=100053152149149"><i class="fab fa-facebook-f"></i></a>
+            <!-- Dribbble -->
+            <a type="button" class="btn btn-floating btn-warning btn-md" href="https://www.upp.edu.mx/site/"><i class="fas fa-road"></i></a>
+            <!-- Twitter -->
+            <a type="button" class="btn btn-floating btn-warning btn-md" href="mailto: sistemas@upp.edu.mx"><i class="fas fa-mail-bulk"></i></a>
+            
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
+
+          <img src="{% static 'core/images/escudo_blanco.svg' %}" width=100 ></img>
+          
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          
+        </div>
+
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Plataforma de acceso, &copy; {% now 'Y' %} Copyright:
+      <a class="text-white" href="https://www.upp.edu.mx/">Universidad Politécnica de Pachuca</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+
+
+
 
   <!-- Bootstrap core JavaScript
     ================================================== -->

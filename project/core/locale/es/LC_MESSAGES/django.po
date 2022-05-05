@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-24 09:54-0600\n"
+"POT-Creation-Date: 2022-01-05 23:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,26 +91,42 @@ msgstr "Componentes de la estrategia ELE"
 msgid "The G4U strategy includes the following components:"
 msgstr "La estrategia G4U incluye los siguientes componentes:"
 
-#: core/templates/core/message.html:5
+#: core/templates/core/message.html:5 core/templates/core/message.html:9
 msgid "Governor’s message"
 msgstr "Mensaje del Gobernador"
 
 #: core/templates/core/methodology.html:11
 msgid "methodology-parrafo0"
-msgstr "Todo el material desarrollado se encuentra alineado al Marco Común Europeo de Referencia de Lengua (MCERL) dado que es el marco utilizado por todas las Instituciones de Educación Superior para la enseñanza del idioma inglés, mismo que considera 5 niveles de dominio."
+msgstr ""
+"Todo el material desarrollado se encuentra alineado al Marco Común Europeo "
+"de Referencia de Lengua (MCERL) dado que es el marco utilizado por todas las "
+"Instituciones de Educación Superior para la enseñanza del idioma inglés, "
+"mismo que considera 5 niveles de dominio."
 
 #: core/templates/core/methodology.html:32
 msgid "methodology-parrafo1"
-msgstr "Cada nivel de dominio considera dos materiales principales: Student's Book y Workbook "
+msgstr ""
+"Cada nivel de dominio considera dos materiales principales: Student's Book y "
+"Workbook "
 
 #: core/templates/core/methodology.html:33
 msgid "methodology-parrafo2"
-msgstr "Student's Book es material de aprendizaje mediado por el docente y WorkBook es material de aprendizaje independiente."
+msgstr ""
+"Student's Book es material de aprendizaje mediado por el docente y WorkBook "
+"es material de aprendizaje independiente."
 
 #: core/templates/core/methodology.html:34
 msgid "methodology-parrafo3"
-msgstr "Existe un Student's Book y un Workbook por cada uno de los niveles de dominio del MCERL, integrados por 10 unidades de aprendizaje que se componen por 5 lecciones cada una, asegurando a través de sus ejercicios, la integración de las competencias básicas del idioma: Reading, Writing, Listening y Speaking. "
+msgstr ""
+"Existe un Students Book y un Workbook por cada uno de los niveles de dominio "
+"del MCERL, integrados por 10 unidades de aprendizaje que se componen por 5 "
+"lecciones cada una, asegurando a través de sus ejercicios, la integración de "
+"las competencias básicas del idioma: Reading, Writing, Listening y Speaking. "
 
 #: core/templates/core/simple.html:37
 msgid "my love"
+msgstr ""
+
+#: core/templates/core/whatisele.html:9
+msgid "What is English Learning Ecosystem?"
 msgstr ""

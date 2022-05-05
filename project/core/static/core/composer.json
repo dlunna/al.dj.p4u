@@ -10,7 +10,8 @@
     ],
     "require": {
         "twbs/bootstrap": "^5.0",
-        "components/jquery": "^3.5"
+        "components/jquery": "^3.5",
+        "components/font-awesome": "^5.15"
     }
 
 }

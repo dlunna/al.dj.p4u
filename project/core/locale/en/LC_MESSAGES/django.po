@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-24 10:22-0600\n"
+"POT-Creation-Date: 2022-01-05 23:44-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,7 @@ msgstr ""
 msgid "The G4U strategy includes the following components:"
 msgstr ""
 
-#: core/templates/core/message.html:5
+#: core/templates/core/message.html:5 core/templates/core/message.html:9
 msgid "Governor’s message"
 msgstr ""
 
@@ -105,11 +105,13 @@ msgstr "Each level considers two main components: Student’s Book and Workbook.
 
 #: core/templates/core/methodology.html:33
 msgid "methodology-parrafo2"
-msgstr "The Student´s book is a learning tool administered by the teacher and the Workbook that is a learning tool that the student can work on his / her own."
+msgstr ""
+"The Student´s book is a learning tool administered by the teacher and the "
+"Workbook that is a learning tool that the student can work on his / her own."
 
 #: core/templates/core/methodology.html:34
 msgid "methodology-parrafo3"
-msgstr ""   
+msgstr ""
 "There is a Student’s Book and a Workbook for each one of the proficiency "
 "levels according to the CEFRL divided in 10 learning units divided in 5 "
 "lessons each one, integrating the five skills of the language: Reading, "
@@ -117,4 +119,8 @@ msgstr ""
 
 #: core/templates/core/simple.html:37
 msgid "my love"
+msgstr ""
+
+#: core/templates/core/whatisele.html:9
+msgid "What is English Learning Ecosystem?"
 msgstr ""
