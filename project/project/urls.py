@@ -33,6 +33,8 @@ urlpatterns = [
     path('methodology', core_views.methodology, name='methodology'),
     path('partners', core_views.partners, name='partners'),
 
+    path('learning/', include('learning.urls')),
+
     path('contact/', core_views.contact, name='contact'),
     path('simple/', core_views.simple, name='simple'),
 
