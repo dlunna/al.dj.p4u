@@ -10,33 +10,28 @@
   
   {% get_current_language as LANGUAGE_CODE %}
 
-
-
-
-
-
-  
-
-
-
-
-
-
+  <h1>Videos</h1>
 
   {% if LANGUAGE_CODE == 'es-mx' %}
 
+  <h1>{% trans 'Nivel A1' %}</h1>
+  <hr>
+  <h2>{% trans 'Apreciable Estudiante:' %}</h2>
+  <p>{% trans 'En este apartado puedes descargar las versiones digitales de los libros de inglés en formato PDF editable, lo cual te permitirá utilizarlos, contestar los ejercicios y almacenar tus avances, en cualquier dispositivo. Asimismo, puedes descargar los materiales complementarios a los que se hace referencia en los libros digitales y que consisten en audios, videos y scripts, vinculados a cada una de las unidades que conforman el libro que estés utilizando. ' %}</p>
+
+  {% elif LANGUAGE_CODE == 'en-us' %}
+
   <h1>{% trans 'Level A1' %}</h1>
   <hr>
+  <h2>{% trans 'Dear Student:' %}</h2>
+  <p>{% trans 'In this section you can download the digital versions of the English books in editable PDF format. This will allow you to use them, answer the exercises and store your progress in any device. Additionally, you can download the complementary materials to the digital books that consist of audios, videos and scripts linked to each one of the units from the book you are using. ' %}</p>
 
-  <p>{% lorem 1 b random %}</p>
+  {% endif %}
 
   <div class="container">    
-  
     <div class="row mb-2">
-
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          
           <div class="col p-4 d-flex flex-column position-static">
             <!--<strong class="d-inline-block mb-2 text-primary">World</strong>-->
             <h3 class="mb-0">Student's Book A1</h3>
@@ -46,17 +41,13 @@
             <a href="#" class="stretched-link">Audios</a>
             <a href="#" class="stretched-link">Scripts</a>
           </div>
-
           <div class="col-auto d-none d-lg-block">
-            <img alt="G4U" class="img-fluid" src="{% static 'core/images/message/gobernador-es.png' %}" >
+            <img alt="G4U" class="img-fluid" src="{% static 'core/images/learning/portada/SBA1.jpg' %}" >
           </div>
-
         </div>
       </div>
-
       <div class="col-md-6">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          
           <div class="col p-4 d-flex flex-column position-static">
             <!--<strong class="d-inline-block mb-2 text-primary">World</strong>-->
             <h3 class="mb-0">Workbook A1</h3>
@@ -65,26 +56,18 @@
             <!--<a href="#" class="stretched-link">Videos</a>-->
             <a href="#" class="stretched-link">Audios</a>
             <a href="#" class="stretched-link">Scripts</a>
+            .
           </div>
-
           <div class="col-auto d-none d-lg-block">
-            <img alt="G4U" class="img-fluid" src="{% static 'core/images/message/gobernador-es.png' %}" >
+            <img alt="G4U" class="img-fluid" src="{% static 'core/images/learning/portada/WBA1.jpg' %}" >
           </div>
-
         </div>
       </div>
-
     </div><!--dos-->
-    
   </div><!--container-->
 
     
     
 
-  {% elif LANGUAGE_CODE == 'en-us' %}
 
-    <p>{% lorem 1 b random %}</p>
-    <img alt="G4U" class="img-fluid" src="{% static 'core/images/message/gobernador-en.png' %}" >
-
-  {% endif %}
 {% endblock %}
