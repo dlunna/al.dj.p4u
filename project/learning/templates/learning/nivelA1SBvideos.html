@@ -1,0 +1,260 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block titulo %} {% trans 'Level X' %} {% endblock %}
+
+{% block contenido %}
+
+  
+  
+  {% get_current_language as LANGUAGE_CODE %}
+
+  <h1>Videos</h1>
+  <hr>
+  
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU1.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">This is me!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU1.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU2.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">What are you doing?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU2.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU3.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">Everyday life</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU3.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU4.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">Around the house</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU4.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU5.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">What do you do in your free time?</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU5.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU6.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">My favorites clothes</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU6.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU7.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">Planning a party</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU7.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU8.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">Family and jobs</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU8.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU9.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">Biographies</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU9.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="100%" height="240" controls>
+              <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU10.mp4' %}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="card-body">
+              <p class="card-text">Life experiences</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                    <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU10.mp4' %}">
+                    Descargar
+                    </a>
+                  </button>
+                  <!--<button type="button" class="btn btn-sm btn-outline-secondary">Boton 2</button>-->
+                </div>
+                  <!--<small class="text-muted">mini</small>-->
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+    
+
+
+{% endblock %}

@@ -9,5 +9,11 @@ def home (request):
 def A1(request):
     return render(request, 'learning/nivelA1.html')
 
-def A1videos(request):
-    return render(request, 'learning/nivelA1videos.html')
+def A1SBvideos(request):
+    return render(request, 'learning/nivelA1SBvideos.html')
+
+def A1SBaudios(request):
+    return render(request, 'learning/nivelA1SBaudios.html')
+
+def A1SBscripts(request):
+    return render(request, 'learning/nivelA1SBscripts.html')
