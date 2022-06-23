@@ -1,82 +1,933 @@
 {% extends 'core/base.html' %}
 {% load static %}
 {% load i18n %}
-
-{% block titulo %} {% trans 'Level X' %} {% endblock %}
-
+{% block titulo %}
+    {% trans 'Level X' %}
+{% endblock %}
 {% block contenido %}
-
-  
-  
-  {% get_current_language as LANGUAGE_CODE %}
-
-  <h1>Audios</h1>
-  <hr>
-  
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <p>
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse01" role="button" aria-expanded="false" aria-controls="collapse01">
-          01
-        </a>
-      </p>
-      <div class="collapse" id="collapse01">
-        <div class="card card-body">
-          <!--inicio uno-->
-
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-
-
-            <div class="col">
-              <div class="card shadow-sm">
-                <video width="100%" height="240" controls>
-                  <source src="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU1.mp4' %}" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <div class="card-body">
-                  <p class="card-text">This is me!</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">
-                        <a href="{% static 'core/Libros/A1/SB/Video/Grammar_References/GRU1.mp4' %}">
-                        Descargar
-                        </a>
-                      </button>
+    {% get_current_language as LANGUAGE_CODE %}
+    <h1>Audios</h1>
+    <hr>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse01"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse01">
+                    Unit 1 This is me!
+                </a>
+            </p>
+            <div class="collapse" id="collapse01">
+                <div class="card card-body">
+                    <!--inicio uno-->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LAE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 1 LESSON A EXERCISE 1</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LAE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LAE3.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 1 LESSON A EXERCISE 3</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LAE3.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LAE6.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 1 LESSON A EXERCISE 6</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LAE6.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LBE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 1 LESSON B EXERCISE 1</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LBE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LCE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 1 LESSON C EXERCISE 1</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LCE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LCE5.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 1 LESSON C EXERCISE 5</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LCE5.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LCE6.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 1 LESSON C EXERCISE 6</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT01/A1SBU1LCE6.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <!--fin del uno-->
                 </div>
-              </div>
+                <!--uno-->
             </div>
-    
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse02"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse02">
+                    Unit 2 What are you doing?
+                </a>
+            </p>
+            <div class="collapse" id="collapse02">
+                <div class="card card-body">
+                    <!--inicio dos -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT02/A1SBU2LBE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 2 LESSON B EXERCISE 1</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT02/A1SBU2LBE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT02/A1SBU2LBE2.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 2 LESSON B EXERCISE 2</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT02/A1SBU2LBE2.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT02/A1SBU2LCE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 2 LESSON C EXERCISE 1</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT02/A1SBU2LCE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT02/A1SBU2LEE3.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 2 LESSON E EXERCISE 3</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT02/A1SBU2LEE3.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin del dos-->
+                </div>
+                <!--dos-->
+            </div>
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse03"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse03">
+                    Unit 3 Everyday life
+                </a>
+            </p>
+            <div class="collapse" id="collapse03">
+                <div class="card card-body">
+                    <!--inicio tres -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LAE2.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        UNIT 3 LESSON A EXERCISE 2
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LAE2.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LAE5.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        UNIT 3 LESSON A EXERCISE 5
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LAE5.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LBE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        UNIT 3 LESSON B EXERCISE 1
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LBE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LBE3.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        UNIT 3 LESSON B EXERCISE 3
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LBE3.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LBE5.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        UNIT 3 LESSON B EXERCISE 5
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LBE5.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LCE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        UNIT 3 LESSON C EXERCISE 1
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT03/A1SBU3LCE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin del tres-->
+                </div>
+                <!--tres-->
+            </div>
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse04"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse04">
+                    Unit 4 Around the house
+                </a>
+            </p>
+            <div class="collapse" id="collapse04">
+                <div class="card card-body">
+                    <!--inicio tres -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT04/A1SBU4LAE2.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        UNIT 4 LESSON A EXERCISE 2
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT04/A1SBU4LAE2.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin del dos-->
+                </div>
+                <!--dos-->
+            </div>
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse05"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse05">
+                   Unit 5 What do you do in your free time?
+                </a>
+            </p>
+            <div class="collapse" id="collapse05">
+                <div class="card card-body">
+                    <!--inicio cinco -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             
-    
-          </div>
-          <!--fin del uno-->
-        </div><!--uno-->
-      </div>
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT05/A1SBU5LAE2.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 5 LESSON A EXERCISE 2 </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT05/A1SBU5LAE2.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT05/A1SBU5LBE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 5 LESSON B EXERCISE 1 </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT05/A1SBU5LBE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                    </div>
+                    <!--fin del cinco-->
+                </div>
+                <!--cinco-->
+            </div>
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse06"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse06">
+                   Unit 6 My favorite clothes 
+                </a>
+            </p>
+            <div class="collapse" id="collapse06">
+                <div class="card card-body">
+                    <!--inicio seis -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT06/A1SBU6LAE3.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 6 LESSON A EXERCISE 3</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT06/A1SBU6LAE3.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT06/A1SBU6LAE4.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 6 LESSON A EXERCISE 4</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT06/A1SBU6LAE4.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT06/A1SBU6LBE3.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 6 LESSON B EXERCISE 3</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT06/A1SBU6LBE3.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                    <!--fin del seis-->
+                </div>
+                <!--seis-->
+            </div>
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse07"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse07">
+                   Unit 7 Planning a party 
+                </a>
+            </p>
+            <div class="collapse" id="collapse07">
+                <div class="card card-body">
+                    <!--inicio 07 -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT07/A1SBU7LAE3.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 7 LESSON A EXERCISE 3</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT07/A1SBU7LAE3.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT07/A1SBU7LEE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 7 LESSON E EXERCISE 1 </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT07/A1SBU7LEE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+            
+                    </div>
+                    <!--fin del 07-->
+                </div>
+                <!--07-->
+            </div>
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse08"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse08">
+                   Unit 8 Family and jobs 
+                </a>
+            </p>
+            <div class="collapse" id="collapse08">
+                <div class="card card-body">
+                    <!--inicio 08 -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT08/A1SBU8LAE4.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 8 LESSON A EXERCISE 4</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT08/A1SBU8LAE4.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT08/A1SBU8LCE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 8 LESSON C EXERCISE 1  </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT08/A1SBU8LCE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+            
+                    </div>
+                    <!--fin del 08-->
+                </div>
+                <!--08-->
+            </div>
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse09"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse09">
+                   Unit 9 Biographies 
+                </a>
+            </p>
+            <div class="collapse" id="collapse09">
+                <div class="card card-body">
+                    <!--inicio 09 -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT09/A1SBU9LAE4.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 9 LESSON A EXERCISE 4 </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT09/A1SBU9LAE4.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT09/A1SBU9LCE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 9 LESSON C EXERCISE 1 </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT09/A1SBU9LCE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT09/A1SBU9LEE4.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 9 LESSON E EXERCISE 4</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT09/A1SBU9LEE4.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+            
+                    </div>
+                    <!--fin del 09-->
+                </div>
+                <!--09-->
+            </div>
+
+            <p>
+                <a class="btn btn-primary"
+                   data-bs-toggle="collapse"
+                   href="#collapse10"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="collapse10">
+                   Unit 10 Life experiences 
+                </a>
+            </p>
+            <div class="collapse" id="collapse10">
+                <div class="card card-body">
+                    <!--inicio 10 -->
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LAE2.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 10 LESSON A EXERCISE 2</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LAE2.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LAE3.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 10 LESSON A EXERCISE 3</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LAE3.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LBE4.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 10 LESSON B EXERCISE 4 </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LBE4.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LBE6.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 10 LESSON B EXERCISE 6</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LBE6.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <audio controls>
+                                    <source src="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LEE1.mp3' %}"
+                                            type="audio/mpeg">
+                                    Your browser does not support the audio tag.
+                                </audio>
+                                <div class="card-body">
+                                    <p class="card-text">UNIT 10 LESSON E EXERCISE 1 </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-sm btn-outline-secondary">
+                                                <a href="{% static 'core/Libros/A1/SB/Audio/UNIT10/A1SBU10LEE1.mp3' %}">Descargar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                    <!--fin del 10-->
+                </div>
+                <!--10-->
+            </div>
 
 
-      <p>
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse02" role="button" aria-expanded="false" aria-controls="collapse02">
-          02
-        </a>
-        
-      </p>
-      <div class="collapse" id="collapse02">
-        <div class="card card-body">
-          <!--inicio dos -->
-          02
-          <!--fin del dos-->
-        </div><!--dos-->
-      </div>
-
-      
+        </div>
     </div>
-  </div>
-    
-
-
 {% endblock %}
